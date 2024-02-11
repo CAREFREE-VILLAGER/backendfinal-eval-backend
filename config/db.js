@@ -2,7 +2,7 @@
 const mongoose = require('mongoose');
 const dotenv = require('dotenv').config(); 
 
-const mongoUrl = process.env.MONGODB_URI;
+const mongoUrl = "process.env.MONGODB_URI";
 const config = {
     connectTimeoutMS: 30000,
     socketTimeoutMS: 30000,
