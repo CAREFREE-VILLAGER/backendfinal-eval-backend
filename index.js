@@ -45,15 +45,15 @@ app.listen(PORT, () => {
 //db.js
 
 
-const mongoose = require('mongoose');
+// const mongoose = require('mongoose');
 // const dotenv = require('dotenv').config(); 
 
 // const mongoUrl = process.env.MONGODB_URI;
-const config = {
-    connectTimeoutMS: 30000,
-    socketTimeoutMS: 30000,
-    useUnifiedTopology: true
-  }
+// const config = {
+//     connectTimeoutMS: 30000,
+//     socketTimeoutMS: 30000,
+//     useUnifiedTopology: true
+//   }
 
 //   const connectDB = async ()=>{
 //     try{
@@ -63,8 +63,8 @@ const config = {
 //         console.log("MongoDB connection error:",err);
 //     }
 //   };
-mongoose.connect("mongodb+srv://demonking:demon123@cluster0.pmncnmh.mongodb.net/?retryWrites=true&w=majority",config).then(() => {
-    console.log('MongoDB connected');
-}).catch(err => console.error('MongoDB connection error:', err));
+// mongoose.connect("mongodb+srv://demonking:demon123@cluster0.pmncnmh.mongodb.net/?retryWrites=true&w=majority",config).then(() => {
+//     console.log('MongoDB connected');
+// }).catch(err => console.error('MongoDB connection error:', err));
 
-module.exports= mongoose.connection;
+// module.exports= mongoose.connection;
