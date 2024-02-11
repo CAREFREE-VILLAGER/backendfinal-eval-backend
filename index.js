@@ -46,9 +46,9 @@ app.listen(PORT, () => {
 
 
 const mongoose = require('mongoose');
-const dotenv = require('dotenv').config(); 
+// const dotenv = require('dotenv').config(); 
 
-const mongoUrl = process.env.MONGODB_URI;
+// const mongoUrl = process.env.MONGODB_URI;
 const config = {
     connectTimeoutMS: 30000,
     socketTimeoutMS: 30000,
@@ -63,7 +63,7 @@ const config = {
 //         console.log("MongoDB connection error:",err);
 //     }
 //   };
-mongoose.connect(mongoUrl,config).then(() => {
+mongoose.connect("mongodb+srv://demonking:demon123@cluster0.pmncnmh.mongodb.net/?retryWrites=true&w=majority",config).then(() => {
     console.log('MongoDB connected');
 }).catch(err => console.error('MongoDB connection error:', err));
 
