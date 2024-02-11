@@ -21,7 +21,7 @@ app.use('/users', userRoutes);
 app.use('/posts', postRoutes);
 app.use('/', homeRoutes);
 const corsOptions = {
-  origin: 'http://localhost:3000/',
+  origin: 'http://localhost:3001/',
   optionsSuccessStatus: 200,
   credentials: true
   
