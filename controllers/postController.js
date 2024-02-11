@@ -1,4 +1,6 @@
+
 const Post = require('../models/Post'); 
+
 
 exports.getPosts = async (req, res) => {
   try {
@@ -20,6 +22,7 @@ exports.getPosts = async (req, res) => {
 
 exports.addPost = async (req, res) => {
   try {
+   
     const { title, body, device } = req.body;
     const userId = req.user.userId; 
 
